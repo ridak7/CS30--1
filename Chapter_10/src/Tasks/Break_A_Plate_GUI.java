@@ -49,12 +49,12 @@ public class Break_A_Plate_GUI {
 		
 		
 		//Importing images from file:)
-		ImageIcon pHolder = new ImageIcon("..\\Chapter10\\src\\placeholder.gif");
-		ImageIcon plates1 = new ImageIcon("..\\Chapter10\\src\\plates.gif");
-		ImageIcon plates2 = new ImageIcon("..\\Chapter10\\src\\plates_two_broken.gif");
-		ImageIcon plates3 = new ImageIcon("..\\Chapter10\\src\\plates_all_broken.gif");
-		ImageIcon sticker = new ImageIcon("..\\Chapter10\\src\\sticker.gif");
-		ImageIcon tiger = new ImageIcon("..\\Chapter10\\src\\tiger_plush.gif");
+		ImageIcon pHolder = new ImageIcon("..\\Chapter_10\\src\\placeholder.gif");
+		ImageIcon plates1 = new ImageIcon("..\\Chapter_10\\src\\plates.gif");
+		ImageIcon plates2 = new ImageIcon("..\\Chapter_10\\src\\plates_two_broken.gif");
+		ImageIcon plates3 = new ImageIcon("..\\Chapter_10\\src\\plates_all_broken.gif");
+		ImageIcon sticker = new ImageIcon("..\\Chapter_10\\src\\sticker.gif");
+		ImageIcon tiger = new ImageIcon("..\\Chapter_10\\src\\tiger_plush.gif");
 		
 		
 		frame = new JFrame();
@@ -64,7 +64,7 @@ public class Break_A_Plate_GUI {
 		frame.getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBackground(new Color(135, 206, 250));
+		panel.setBackground(new Color(250,250,250));
 		panel.setBounds(0, 0, 446, 374);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
@@ -80,8 +80,8 @@ public class Break_A_Plate_GUI {
 		panel.add(PrizeWon);
 		
 		//main screen
-		plates.setIcon(new ImageIcon("..\\Chapter10\\src\\plates.gif"));
-		PrizeWon.setIcon(new ImageIcon("..\\Chapter10\\src\\placeholder.gif"));
+		plates.setIcon(new ImageIcon("..\\Chapter_10\\src\\plates.gif"));
+		PrizeWon.setIcon(new ImageIcon("..\\Chapter_10\\src\\placeholder.gif"));
 		
 		
 		JButton play = new JButton("Play");
