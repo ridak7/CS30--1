@@ -20,7 +20,7 @@ public class Metric_Conversion_GUI {
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
-			public void run() {
+			public void run() { 
 				try {
 					Metric_Conversion_GUI window = new Metric_Conversion_GUI();
 					window.frame.setVisible(true);
