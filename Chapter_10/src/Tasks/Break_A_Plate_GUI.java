@@ -119,7 +119,7 @@ public class Break_A_Plate_GUI {
 		
 		JLabel title = new JLabel("Break A Plate Game (UnFair)");
 		title.setFont(new Font("Perpetua Titling MT", Font.PLAIN, 20));
-		title.setHorizontalAlignment(SwingConstants.CENTER);
+		title.setHorizontalAlignment(SwingConstants.CENTER); 
 		title.setBounds(10, 11, 426, 35);
 		panel.add(title);
 	}
