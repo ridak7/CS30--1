@@ -32,7 +32,7 @@ public class Metric_Conversion_GUI {
 	} 
 
 	/**
-	 * Create the application.
+	 * Create the application. 
 	 */
 	public Metric_Conversion_GUI() {
 		initialize();
