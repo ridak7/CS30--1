@@ -14,16 +14,18 @@ import java.awt.event.ActionEvent;
 import java.awt.Color;
 
 public class Break_A_Plate_GUI {
- 
+
 	private JFrame frame;
-	
+	// pick four random integers, each 1-3
+
 	
 	/**
+	 * Launch the application.
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
-				try { 
+				try {
 					Break_A_Plate_GUI window = new Break_A_Plate_GUI();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
@@ -45,36 +47,41 @@ public class Break_A_Plate_GUI {
 	 */
 	private void initialize() {
 		
-		ImageIcon pHolder = new ImageIcon("/Chapter_10_Real/Images/placeholder.gif");
-		ImageIcon plates1 = new ImageIcon("/Chapter_10_Real/Images/plates_all_broken.gif");
-		ImageIcon plates2 = new ImageIcon("/Chapter_10_Real/Images/plates_two_broken.gif");
-		ImageIcon plates3 = new ImageIcon("/Chapter_10_Real/Images/plates.gif");
-		ImageIcon sticker = new ImageIcon("/Chapter_10_Real/Images/sticker.gif");
-		ImageIcon tiger = new ImageIcon("/Chapter_10_Real/Images/tiger_plush.gif");
-
+		
+		//Importing images from file:)
+		ImageIcon pHolder = new ImageIcon("..\\Chapter10\\src\\placeholder.gif");
+		ImageIcon plates1 = new ImageIcon("..\\Chapter10\\src\\plates.gif");
+		ImageIcon plates2 = new ImageIcon("..\\Chapter10\\src\\plates_two_broken.gif");
+		ImageIcon plates3 = new ImageIcon("..\\Chapter10\\src\\plates_all_broken.gif");
+		ImageIcon sticker = new ImageIcon("..\\Chapter10\\src\\sticker.gif");
+		ImageIcon tiger = new ImageIcon("..\\Chapter10\\src\\tiger_plush.gif");
+		
+		
 		frame = new JFrame();
-		frame.setBounds(100, 100, 442, 446);
+		frame.setBackground(new Color(135, 206, 250));
+		frame.setBounds(100, 100, 456, 407);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBackground(Color.CYAN);
-		panel.setBounds(0, 0, 426, 407);
+		panel.setBackground(new Color(135, 206, 250));
+		panel.setBounds(0, 0, 446, 374);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
 		
 		JLabel plates = new JLabel("");
 		plates.setHorizontalAlignment(SwingConstants.CENTER);
-		plates.setBounds(45, 50, 335, 95);
+		plates.setBounds(62, 77, 319, 107);
 		panel.add(plates);
 		
 		JLabel PrizeWon = new JLabel("");
 		PrizeWon.setHorizontalAlignment(SwingConstants.CENTER);
-		PrizeWon.setBounds(10, 269, 404, 127);
+		PrizeWon.setBounds(73, 235, 303, 127);
 		panel.add(PrizeWon);
 		
-		plates.setIcon(plates1);
-		PrizeWon.setIcon(pHolder);
+		//main screen
+		plates.setIcon(new ImageIcon("..\\Chapter10\\src\\plates.gif"));
+		PrizeWon.setIcon(new ImageIcon("..\\Chapter10\\src\\placeholder.gif"));
 		
 		
 		JButton play = new JButton("Play");
@@ -83,7 +90,7 @@ public class Break_A_Plate_GUI {
 			{
 				
 				// pick four random integers, each 1-3
-				int playGame = 1 + (int)( 2 * Math.random() );
+				int playGame = 1 + (int)( 3 * Math.random() );
 				
 				
 				if (playGame == 1)
@@ -100,16 +107,21 @@ public class Break_A_Plate_GUI {
 					PrizeWon.setIcon(tiger);
 					play.setText("Play Again");
 				}
+				else
+				{
+					
+				}
 			}
 		});
-		play.setBounds(45, 156, 335, 100);
+
+		play.setBounds(163, 195, 121, 29);
 		panel.add(play);
 		
-		JLabel title = new JLabel("BREAK A PLATE GAME");
-		title.setForeground(Color.WHITE);
+		JLabel title = new JLabel("Break A Plate");
 		title.setFont(new Font("Perpetua Titling MT", Font.PLAIN, 20));
 		title.setHorizontalAlignment(SwingConstants.CENTER);
-		title.setBounds(0, 11, 426, 35);
+		title.setBounds(10, 11, 426, 35);
 		panel.add(title);
 	}
 }
+
