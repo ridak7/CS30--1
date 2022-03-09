@@ -68,7 +68,7 @@ public class Metric_Conversion_GUI {
 		
 		JLabel lblFormula = new JLabel("Formula:");
 		lblFormula.setBounds(107, 202, 121, 26);
-		panel.add(lblFormula);
+		panel.add(lblFormula); 
 		
 		JLabel Release = new JLabel("");
 		Release.setBounds(182, 233, 198, 37);
