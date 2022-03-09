@@ -21,7 +21,7 @@ public class Divisible_By_3_Excercise_GUI_One {
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
-			public void run() {
+			public void run() { 
 				try { 
 					Divisible_By_3_Excercise_GUI_One window = new Divisible_By_3_Excercise_GUI_One();
 					window.frame.setVisible(true);
