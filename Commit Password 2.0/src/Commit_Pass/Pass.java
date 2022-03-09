@@ -15,7 +15,7 @@ public class Pass {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.print("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");
+		System.out.print("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"); 
 		System.out.print("https://github.com/DummiesAlert/CS30-Updated.git");
 	
 	}
