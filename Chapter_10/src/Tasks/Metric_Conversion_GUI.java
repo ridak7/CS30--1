@@ -36,7 +36,7 @@ public class Metric_Conversion_GUI {
 	 */
 	public Metric_Conversion_GUI() {
 		initialize();
-	}
+	} 
 
 	/**
 	 * Initialize the contents of the frame.
